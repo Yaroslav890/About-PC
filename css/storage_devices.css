@@ -1,0 +1,193 @@
+/*ОБНУЛЕНИЕ*/
+*,*:before,*:after{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+html,body{
+	background: #000;
+	width: 100%;
+	height: 100%;
+	padding: 0px 10px;
+}
+/*MENU*/
+.menu{
+	position: fixed;
+	width: 100%;
+	background-color: #000;
+}
+.menu ul{list-style: none;}
+.menu > ul{display: flex;justify-content: center;}
+.menu > ul li a{
+	display: block;
+	padding: 15px 30px 15px 40px;
+	font-size: 18px;
+	color: #999999;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.7s ease 0s;}
+.menu li a:hover{
+	color: #fff;
+	box-shadow: 0px 0px 15px -3px #F51616;
+	transition: all 0.7s ease;
+}
+.menu li ul{
+	position: absolute;
+	min-width: 150px;
+	background-color: #000;
+	display: none;
+}
+.menu li ul a{font-size: 10px;padding: 10px 20px 10px 30px;}
+.menu li:hover > ul{display: block;transition: display 0.5s ease 0s;}
+
+/*CONTENT*/
+.content{padding: 47px 0px 0px 0px;}
+
+/*HEADER*/
+.h1{
+	color: #fff;
+	padding: 20px 0px ;
+	text-align: center;
+	font-size: 40px;
+	color:#fff;
+}
+.h2{
+	color: #FA9300;
+	padding: 20px 0px ;
+	text-align: center;
+	font-size: 30px;
+	border-bottom:1px solid #b2b2b2;
+}
+.h3{
+	color: #f1f3f4;
+	padding: 10px 0px;
+	margin: 10px 0px;
+	text-align: center;
+	font-size: 20px;
+	border-bottom:1px solid #b2b2b2;
+}
+.header__img {text-align: center;margin: 0 0px 40px 0px;}
+.header__img img{width: 100%;}
+.introduction{
+	color: #c1c1c1;
+	font-size: 20px;
+	text-align: center;
+	border:1px solid #cccccc;
+	border-radius: 20px;
+	padding: 10px;
+}
+.tab{margin: 20px;padding-top: 10px;}
+.tab__text{
+	font-size: 18px;
+}
+.tabs-triggers{margin: 0px 50px;	transform: translate(0px, 0px);}
+.tabs-triggers_item{
+	color: #f1f3f4;
+	text-align: center;
+	padding: 20px 50px;
+	margin: 20px;
+	text-decoration: none;
+	flex-grow: 1;	
+	transition: all 0.5s ease 0s;
+	background-color: #000;
+	font-size: 25px;
+}
+.tabs-triggers_item-active{
+	background-color: #000;
+	text-align: center;
+	color: #cccccc;
+	font-size: 25px;
+	box-shadow: 0px 0px 15px -3px #E80000; 
+	transition: all 0.7s ease 0s;
+	border-radius: 30px;
+}
+.tabs-content{
+	transform: translate(0px, 25px);
+}
+.tabs-content_item{
+	display: none;
+	padding: 0px;
+	text-align: center;
+	color: #f1f3f4;
+	background-color: #000;
+	border-radius: 30px;
+}
+.tabs-content_item-active{display: block;}
+
+/*COMPONENTS*/
+.content__part{
+	display: flex;
+	justify-content: space-around;
+}
+.content__part-item {
+	flex-basis: 47%;
+	background-color: #111;
+	padding: 15px 20px 20px 20px;
+	margin: 20px;
+	border-radius: 30px;
+	transition: all 0.5s ease;
+}
+.content__part-item:hover{box-shadow: 0px 0px 20px 0px #E74926;transition: all 0.7s ease 0s;}
+.content__part-item_1 {
+	flex-basis: 90%;
+	background-color: #111;
+	padding: 15px 20px 20px 20px;
+	margin: 20px;
+	border-radius: 30px;
+	transition: all 0.5s ease;
+}
+.content__part-item_1:hover{box-shadow: 0px 0px 20px 0px #E74926;transition: all 0.7s ease 0s;}
+.content__part-item_2 {
+	flex-basis: 22%;
+	background-color: #111;
+	padding: 15px 20px 20px 20px;
+	margin: 20px;
+	border-radius: 30px;
+	transition: all 0.5s ease;
+}
+.content__part-item_2:hover{box-shadow: 0px 0px 20px 0px #E74926;transition: all 0.7s ease 0s; transform: scale(1.1, 1.1);}
+.content__part-item_3 {
+	flex-basis: 30%;
+	background-color: #111;
+	padding: 15px 20px 20px 20px;
+	margin: 20px;
+	border-radius: 30px;
+	transition: all 0.5s ease;
+}
+.content__part-item_3:hover{box-shadow: 0px 0px 20px 0px #E74926;transition: all 0.7s ease 0s; transform: scale(1.1, 1.1);}
+.content-item__logo {
+	color:#5F9EA0;
+	text-align: center;
+	font-size: 25px;
+	border-bottom: 1px solid #999;
+	padding: 10px 15px 10px 15px;
+	margin: 0px 10px;
+}
+.content-item__text{
+	flex: 1 1 auto;
+}
+.part__img img{width: 100%;border-radius: 20px;}
+.part__img{flex: 1 1 auto;}
+.part__p{
+	font-size: 20px;
+	color: #ccc;
+	padding: 10px;
+	text-align: left;
+}
+.part__p_1{
+	font-size: 28px;
+	color: #ccc;
+	padding: 10px;
+}
+string{
+	color: red;
+}
+/*FOOTER*/
+.footer{
+	height: 70px;
+	color: #CCCCCC;
+	text-align: center;
+	font-size: 18px;
+	border-top: 1px solid #c1c1c1;
+}
